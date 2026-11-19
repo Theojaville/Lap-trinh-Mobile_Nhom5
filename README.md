@@ -9,6 +9,7 @@ Trường: Đại học Công nghệ Kỹ thuật TP.HCM (UTE)
 👥 Thành viên nhóm & Phân công công việc
 
 | STT | Họ và Tên | Vai trò | Nhánh Git (Branch) | Nhiệm vụ chính |
+|---|---|---|---|---|
 | 1 | Chế Thiên Nhi | Backend/Network | `feature/thien-nhi-backend-network` | Spring Boot, REST API, WebSocket, Auth/JWT, Chat & Group APIs, bảo mật tầng server |
 | 2 | Đinh Phú Sỹ | Data/Offline | `feature/phu-sy-data-offline` | Room DB, SQLCipher, Outbox Pattern đồng bộ ngoại tuyến, Repository/ViewModel, LRU Cache |
 | 3 | Phạm Nữ Nguyệt Minh | UI/Multi-screen | `feature/nguyet-minh-ui-multiscreen` | Giao diện XML (Material 3), Adaptive UI (Phone/Tablet/Foldable) với SlidingPaneLayout |
