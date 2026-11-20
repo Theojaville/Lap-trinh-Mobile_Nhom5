@@ -1,0 +1,10 @@
+# Tất cả Dev — Tuần 2+
+# Package: com.prosumerchat.app.data.repository
+# Mỗi Dev tạo Repository của mình tại đây:
+#   Dev A: AuthRepository.java, UserRepository.java
+#   Dev B: FriendRepository.java
+#   Dev C: ConversationRepository.java, MessageRepository.java
+#   Dev D: MediaRepository.java
+#
+# Pattern: Repository là lớp duy nhất biết về cả local (Room) và remote (Firebase/Cloudinary).
+# ViewModel chỉ gọi Repository, KHÔNG gọi trực tiếp FirebaseFirestore hay Room.

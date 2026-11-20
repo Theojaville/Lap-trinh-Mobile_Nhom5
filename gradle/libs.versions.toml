@@ -1,0 +1,122 @@
+# ============================================================
+# Version Catalog — ProsumerChat
+# !!! File này dễ conflict — ai sửa phải báo nhóm trước !!!
+# ============================================================
+
+[versions]
+# ── Build tools ──────────────────────────────────────────────
+agp                  = "9.5.1"
+
+# ── AndroidX core ────────────────────────────────────────────
+appcompat            = "1.8.0"
+activity             = "1.13.0"
+constraintlayout     = "2.2.2"
+slidingpanelayout    = "1.2.0"
+
+# ── Material 3 ───────────────────────────────────────────────
+material             = "1.14.0"
+
+# ── Firebase ─────────────────────────────────────────────────
+# BOM quản lý version cho tất cả firebase-* bên dưới.
+# Khi nâng BOM, tất cả firebase libs được nâng đồng bộ.
+firebase-bom                    = "35.2.0"
+google-services                 = "4.6.0"
+firebase-crashlytics-plugin     = "3.0.8"
+
+# ── Room ─────────────────────────────────────────────────────
+room                 = "2.8.5"
+
+# ── Paging ───────────────────────────────────────────────────
+paging               = "3.5.3"
+
+# ── Security / Crypto ────────────────────────────────────────
+tink-android         = "1.24.0"
+sqlcipher-android    = "4.20.0"
+# SQLite wrapper phải đi kèm SQLCipher
+sqlite-android       = "2.7.1"
+
+# ── Biometric ────────────────────────────────────────────────
+biometric            = "1.1.0"
+
+# ── Lifecycle (ViewModel + LiveData) ─────────────────────────
+lifecycle            = "2.11.1"
+
+# ── Glide ────────────────────────────────────────────────────
+glide                = "5.0.10"
+
+# ── Media3 (ExoPlayer) ───────────────────────────────────────
+media3               = "1.11.1"
+
+# ── Cloudinary ───────────────────────────────────────────────
+cloudinary-android   = "3.1.3"
+
+# ── Test ─────────────────────────────────────────────────────
+junit                = "4.13.2"
+junit-ext            = "1.3.0"
+espresso             = "3.7.0"
+
+# ─────────────────────────────────────────────────────────────
+
+[libraries]
+
+# ── AndroidX ─────────────────────────────────────────────────
+appcompat                   = { group = "androidx.appcompat",             name = "appcompat",              version.ref = "appcompat" }
+activity                    = { group = "androidx.activity",              name = "activity",               version.ref = "activity" }
+constraintlayout            = { group = "androidx.constraintlayout",      name = "constraintlayout",       version.ref = "constraintlayout" }
+slidingpanelayout           = { group = "androidx.slidingpanelayout",     name = "slidingpanelayout",      version.ref = "slidingpanelayout" }
+
+# ── Material ─────────────────────────────────────────────────
+material                    = { group = "com.google.android.material",    name = "material",               version.ref = "material" }
+
+# ── Firebase (via BoM — không khai báo version riêng lẻ) ─────
+firebase-bom                = { group = "com.google.firebase",            name = "firebase-bom",           version.ref = "firebase-bom" }
+firebase-auth               = { group = "com.google.firebase",            name = "firebase-auth" }
+firebase-firestore          = { group = "com.google.firebase",            name = "firebase-firestore" }
+firebase-database           = { group = "com.google.firebase",            name = "firebase-database" }
+firebase-messaging          = { group = "com.google.firebase",            name = "firebase-messaging" }
+firebase-crashlytics        = { group = "com.google.firebase",            name = "firebase-crashlytics" }
+
+# ── Room ─────────────────────────────────────────────────────
+room-runtime                = { group = "androidx.room",                  name = "room-runtime",           version.ref = "room" }
+room-compiler               = { group = "androidx.room",                  name = "room-compiler",          version.ref = "room" }
+room-paging                 = { group = "androidx.room",                  name = "room-paging",            version.ref = "room" }
+
+# ── Paging ───────────────────────────────────────────────────
+paging-runtime              = { group = "androidx.paging",                name = "paging-runtime",         version.ref = "paging" }
+paging-guava                = { group = "androidx.paging",                name = "paging-guava",           version.ref = "paging" }
+
+# ── Security / Crypto ────────────────────────────────────────
+tink-android                = { group = "com.google.crypto.tink",         name = "tink-android",           version.ref = "tink-android" }
+sqlcipher-android           = { group = "net.zetetic",                    name = "sqlcipher-android",      version.ref = "sqlcipher-android" }
+sqlite-android              = { group = "androidx.sqlite",                name = "sqlite",                 version.ref = "sqlite-android" }
+
+# ── Biometric ────────────────────────────────────────────────
+biometric                   = { group = "androidx.biometric",             name = "biometric",              version.ref = "biometric" }
+
+# ── Lifecycle (ViewModel + LiveData) ─────────────────────────
+lifecycle-viewmodel         = { group = "androidx.lifecycle",             name = "lifecycle-viewmodel",    version.ref = "lifecycle" }
+lifecycle-livedata          = { group = "androidx.lifecycle",             name = "lifecycle-livedata",     version.ref = "lifecycle" }
+lifecycle-runtime           = { group = "androidx.lifecycle",             name = "lifecycle-runtime",      version.ref = "lifecycle" }
+
+# ── Glide ────────────────────────────────────────────────────
+glide                       = { group = "com.github.bumptech.glide",      name = "glide",                  version.ref = "glide" }
+glide-compiler              = { group = "com.github.bumptech.glide",      name = "compiler",               version.ref = "glide" }
+
+# ── Media3 (ExoPlayer) ───────────────────────────────────────
+media3-exoplayer            = { group = "androidx.media3",                name = "media3-exoplayer",       version.ref = "media3" }
+media3-ui                   = { group = "androidx.media3",                name = "media3-ui",              version.ref = "media3" }
+
+# ── Cloudinary ───────────────────────────────────────────────
+cloudinary-android          = { group = "com.cloudinary",                 name = "cloudinary-android",     version.ref = "cloudinary-android" }
+
+# ── Test ─────────────────────────────────────────────────────
+junit                       = { group = "junit",                          name = "junit",                  version.ref = "junit" }
+junit-ext                   = { group = "androidx.test.ext",              name = "junit",                  version.ref = "junit-ext" }
+espresso-core               = { group = "androidx.test.espresso",         name = "espresso-core",          version.ref = "espresso" }
+
+# ─────────────────────────────────────────────────────────────
+
+[plugins]
+android-application         = { id = "com.android.application",          version.ref = "agp" }
+google-services             = { id = "com.google.gms.google-services",   version.ref = "google-services" }
+firebase-crashlytics        = { id = "com.google.firebase.crashlytics",  version.ref = "firebase-crashlytics-plugin" }

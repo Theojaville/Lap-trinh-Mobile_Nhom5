@@ -1,0 +1,7 @@
+# Tất cả Dev — Tuần 2+
+# Package: com.prosumerchat.app.data.remote.firebase
+# Tạo các FirebaseDataSource tại đây:
+#   Dev A: AuthDataSource.java
+#   Dev B: FriendDataSource.java
+#   Dev C: MessageDataSource.java (RTDB), ConversationDataSource.java (Firestore)
+#   Dev D: FCMTokenDataSource.java

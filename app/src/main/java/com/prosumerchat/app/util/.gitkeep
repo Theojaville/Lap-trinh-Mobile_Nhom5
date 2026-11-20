@@ -1,0 +1,9 @@
+# Tất cả Dev — dùng chung
+# Package: com.prosumerchat.app.util
+# Tạo utility classes tại đây (dùng chung cho cả team):
+#   - DateTimeUtil.java      : format thời gian
+#   - NetworkUtil.java       : kiểm tra kết nối mạng
+#   - ValidationUtil.java    : validate email, password
+#   - PermissionUtil.java    : request runtime permissions
+#
+# Quy tắc: utility class phải là static methods hoặc singleton — KHÔNG có state.

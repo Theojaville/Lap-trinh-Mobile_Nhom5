@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    activity_main.xml — Khung 2-pane SlidingPaneLayout (FR-06.01).
+    Dev C (Tuần 1): Implement nội dung từng pane:
+      - pane_chat_list : chứa ChatListFragment (danh sách cuộc trò chuyện)
+      - pane_chat_detail: chứa ChatDetailFragment (nội dung chat)
+-->
+<androidx.slidingpanelayout.widget.SlidingPaneLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/sliding_pane_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Pane trái: Danh sách chat -->
+    <FrameLayout
+        android:id="@+id/pane_chat_list"
+        android:layout_width="280dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
+
+    <!-- Pane phải: Chi tiết chat -->
+    <FrameLayout
+        android:id="@+id/pane_chat_detail"
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
+
+</androidx.slidingpanelayout.widget.SlidingPaneLayout>

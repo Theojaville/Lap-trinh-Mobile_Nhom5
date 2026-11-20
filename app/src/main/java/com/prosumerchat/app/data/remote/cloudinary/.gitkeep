@@ -1,0 +1,4 @@
+# Dev D — Tuần 3
+# Package: com.prosumerchat.app.data.remote.cloudinary
+# Tạo CloudinaryDataSource.java tại đây.
+# Config Cloudinary (cloud_name, api_key) đọc từ BuildConfig hoặc secure config — KHÔNG hardcode.

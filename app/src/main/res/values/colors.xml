@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    colors.xml — Material 3 color palette
+    Seed color: Blue (#1565C0) — team có thể đổi sang màu brand thực tế.
+    Generated via https://m3.material.io/theme-builder
+-->
+<resources>
+    <!-- ── Light theme colors ──────────────────────────── -->
+    <color name="md_theme_primary">#1565C0</color>
+    <color name="md_theme_on_primary">#FFFFFF</color>
+    <color name="md_theme_primary_container">#D6E4FF</color>
+    <color name="md_theme_on_primary_container">#001947</color>
+
+    <color name="md_theme_secondary">#545F71</color>
+    <color name="md_theme_on_secondary">#FFFFFF</color>
+    <color name="md_theme_secondary_container">#D8E3F8</color>
+    <color name="md_theme_on_secondary_container">#111C2B</color>
+
+    <color name="md_theme_tertiary">#6E5676</color>
+    <color name="md_theme_on_tertiary">#FFFFFF</color>
+
+    <color name="md_theme_error">#BA1A1A</color>
+    <color name="md_theme_on_error">#FFFFFF</color>
+
+    <color name="md_theme_surface">#F8F9FF</color>
+    <color name="md_theme_on_surface">#191C20</color>
+    <color name="md_theme_surface_variant">#DFE2EB</color>
+    <color name="md_theme_on_surface_variant">#42474E</color>
+
+    <color name="md_theme_outline">#73777F</color>
+
+    <!-- ── Dark theme colors ───────────────────────────── -->
+    <color name="md_theme_dark_primary">#AAC7FF</color>
+    <color name="md_theme_dark_on_primary">#002E6E</color>
+    <color name="md_theme_dark_primary_container">#0047A0</color>
+    <color name="md_theme_dark_on_primary_container">#D6E4FF</color>
+
+    <color name="md_theme_dark_secondary">#BBC7DC</color>
+    <color name="md_theme_dark_on_secondary">#263141</color>
+    <color name="md_theme_dark_secondary_container">#3C4758</color>
+    <color name="md_theme_dark_on_secondary_container">#D8E3F8</color>
+
+    <color name="md_theme_dark_tertiary">#D9B8E0</color>
+    <color name="md_theme_dark_on_tertiary">#3D2846</color>
+
+    <color name="md_theme_dark_error">#FFB4AB</color>
+    <color name="md_theme_dark_on_error">#690005</color>
+
+    <color name="md_theme_dark_surface">#111318</color>
+    <color name="md_theme_dark_on_surface">#E2E2E9</color>
+    <color name="md_theme_dark_surface_variant">#42474E</color>
+    <color name="md_theme_dark_on_surface_variant">#C2C7CF</color>
+
+    <color name="md_theme_dark_outline">#8C9199</color>
+</resources>

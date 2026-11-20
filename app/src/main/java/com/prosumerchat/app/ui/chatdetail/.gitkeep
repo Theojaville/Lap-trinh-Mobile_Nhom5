@@ -1,0 +1,4 @@
+# Dev C — Tuần 2
+# Package: com.prosumerchat.app.ui.chatdetail
+# Tạo ChatDetailFragment.java, MessageAdapter.java tại đây.
+# Fragment này được attach vào MainActivity pane phải (SlidingPaneLayout).

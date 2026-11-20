@@ -1,0 +1,6 @@
+# Dev D — Tuần 3
+# Package: com.prosumerchat.app.media
+# Tạo tại đây:
+#   - ImageCompressor.java      : nén ảnh trước khi upload
+#   - CloudinaryUploadService.java : upload ảnh/video lên Cloudinary
+#   - MediaPickerHelper.java    : helper chọn ảnh/video từ gallery/camera

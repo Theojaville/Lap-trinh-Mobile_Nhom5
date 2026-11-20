@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ProsumerChat</string>
+
+    <!-- Auth — Dev A -->
+    <string name="label_login">Đăng nhập</string>
+    <string name="label_register">Đăng ký</string>
+
+    <!-- Main — Dev C -->
+    <string name="label_chats">Tin nhắn</string>
+    <string name="label_friends">Bạn bè</string>
+</resources>

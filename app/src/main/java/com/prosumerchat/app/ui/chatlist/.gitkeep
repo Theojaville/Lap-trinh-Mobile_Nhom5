@@ -1,0 +1,4 @@
+# Dev C — Tuần 1-2
+# Package: com.prosumerchat.app.ui.chatlist
+# Tạo ChatListFragment.java, ConversationAdapter.java tại đây.
+# Fragment này được attach vào MainActivity pane trái (SlidingPaneLayout).

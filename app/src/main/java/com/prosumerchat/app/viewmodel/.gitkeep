@@ -1,0 +1,9 @@
+# Tất cả Dev — Tuần 2+
+# Package: com.prosumerchat.app.viewmodel
+# Mỗi Dev tạo ViewModel của mình tại đây:
+#   Dev A: AuthViewModel.java, ProfileViewModel.java
+#   Dev B: FriendViewModel.java, SearchViewModel.java
+#   Dev C: ChatListViewModel.java, ChatDetailViewModel.java
+#   Dev D: MediaViewModel.java
+#
+# Extend AndroidViewModel nếu cần Application context (ví dụ: SQLCipher passphrase).
