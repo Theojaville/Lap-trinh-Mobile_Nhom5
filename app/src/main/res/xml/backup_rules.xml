@@ -1,13 +1,14 @@
-<?xml version="1.0" encoding="utf-8"?><!--
-   Sample backup rules file; uncomment and customize as necessary.
-   See https://developer.android.com/guide/topics/data/autobackup
-   for details.
-   Note: This file is ignored for devices older than API 31
-   See https://developer.android.com/about/versions/12/backup-restore
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    backup_rules.xml — Quy tắc Auto Backup cho Android <= 11 (API <= 30).
+    Loại trừ hoàn toàn Tink keyset, dữ liệu bảo mật và SQLCipher DB khỏi cloud backup
+    vì khóa Android Keystore gắn liền phần cứng thiết bị gốc.
 -->
 <full-backup-content>
-    <!--
-   <include domain="sharedpref" path="."/>
-   <exclude domain="sharedpref" path="device.xml"/>
--->
+    <exclude domain="sharedpref" path="prosumerchat_keyset_prefs.xml" />
+    <exclude domain="sharedpref" path="prosumerchat_secure_prefs.xml" />
+    <exclude domain="database" path="prosumerchat.db" />
+    <exclude domain="database" path="prosumerchat.db-wal" />
+    <exclude domain="database" path="prosumerchat.db-shm" />
+    <exclude domain="database" path="prosumerchat.db-journal" />
 </full-backup-content>
