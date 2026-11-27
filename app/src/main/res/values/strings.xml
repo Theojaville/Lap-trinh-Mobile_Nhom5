@@ -1,12 +1,60 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--
+    strings.xml — Default strings (Tiếng Việt).
+    QUY ƯỚC NHÓM: Mọi string mới phải được thêm đồng thời vào:
+      - values/strings.xml
+      - values-vi/strings.xml
+      - values-en/strings.xml
+-->
 <resources>
     <string name="app_name">ProsumerChat</string>
 
-    <!-- Auth — Dev A -->
-    <string name="label_login">Đăng nhập</string>
-    <string name="label_register">Đăng ký</string>
+    <!-- ── Common / Navigation ─────────────────────────────────── -->
+    <string name="action_save">Lưu</string>
+    <string name="action_cancel">Hủy</string>
+    <string name="action_confirm">Xác nhận</string>
+    <string name="action_retry">Thử lại</string>
+    <string name="action_back">Quay lại</string>
+    <string name="action_logout">Đăng xuất</string>
+    <string name="status_loading">Đang tải…</string>
+    <string name="error_generic">Đã có lỗi xảy ra. Vui lòng thử lại.</string>
+    <string name="error_network">Không có kết nối mạng. Vui lòng kiểm tra lại.</string>
 
-    <!-- Main — Dev C -->
+    <!-- ── Main Tabs (Dev C / Dev B / Dev A) ───────────────────── -->
     <string name="label_chats">Tin nhắn</string>
     <string name="label_friends">Bạn bè</string>
+    <string name="label_profile">Hồ sơ</string>
+    <string name="label_settings">Cài đặt</string>
+    <string name="label_saved_messages">Kho lưu trữ cá nhân</string>
+
+    <!-- ── Auth — Dev A ────────────────────────────────────────── -->
+    <string name="label_login">Đăng nhập</string>
+    <string name="label_register">Đăng ký</string>
+    <string name="label_forgot_password">Quên mật khẩu</string>
+    <string name="label_verify_email">Xác minh email</string>
+    <string name="label_change_password">Đổi mật khẩu</string>
+    <string name="hint_identifier">Email hoặc @username</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_username">Tên đăng nhập (@username)</string>
+    <string name="hint_display_name">Tên hiển thị</string>
+    <string name="hint_phone_number">Số điện thoại (tùy chọn)</string>
+    <string name="hint_password">Mật khẩu</string>
+    <string name="hint_confirm_password">Xác nhận mật khẩu</string>
+    <string name="error_invalid_credentials">Email/tên đăng nhập hoặc mật khẩu không đúng.</string>
+    <string name="error_session_revoked">Phiên đăng nhập đã bị đăng xuất từ thiết bị khác.</string>
+
+    <!-- ── Language & Settings — Dev A ─────────────────────────── -->
+    <string name="settings_language">Ngôn ngữ</string>
+    <string name="language_vietnamese">Tiếng Việt</string>
+    <string name="language_english">English</string>
+    <string name="settings_security">Bảo mật</string>
+    <string name="settings_privacy">Quyền riêng tư</string>
+    <string name="settings_active_devices">Thiết bị đang hoạt động</string>
+    <string name="settings_biometric_lock">Khóa sinh trắc học</string>
+    <string name="settings_clear_data_on_logout">Xóa dữ liệu cục bộ khi đăng xuất</string>
+
+    <!-- ── Notifications — Dev A ───────────────────────────────── -->
+    <string name="notif_channel_messages_name">Tin nhắn mới</string>
+    <string name="notif_channel_messages_desc">Thông báo khi có tin nhắn đến</string>
+    <string name="notif_secure_new_message">Tin nhắn mới</string>
 </resources>

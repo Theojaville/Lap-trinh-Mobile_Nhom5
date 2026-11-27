@@ -78,10 +78,18 @@ dependencies {
     // ── Material 3 ─────────────────────────────────────────────
     implementation(libs.material)
 
-    // ── Lifecycle — ViewModel + LiveData ───────────────────────
+    // ── Lifecycle — ViewModel + LiveData + Process + SavedState ──
     implementation(libs.lifecycle.viewmodel)
     implementation(libs.lifecycle.livedata)
     implementation(libs.lifecycle.runtime)
+    implementation(libs.lifecycle.process)
+    implementation(libs.lifecycle.viewmodel.savedstate)
+
+    // ── Navigation & WorkManager & DataStore ───────────────────
+    implementation(libs.navigation.fragment)
+    implementation(libs.navigation.ui)
+    implementation(libs.work.runtime)
+    implementation(libs.datastore.preferences)
 
     // ── Firebase (BoM kiểm soát version) ───────────────────────
     implementation(platform(libs.firebase.bom))
@@ -108,9 +116,10 @@ dependencies {
     // ── Biometric ──────────────────────────────────────────────
     implementation(libs.biometric)
 
-    // ── Glide ──────────────────────────────────────────────────
+    // ── Glide & Avatar Cropper ─────────────────────────────────
     implementation(libs.glide)
     annotationProcessor(libs.glide.compiler)
+    implementation(libs.image.cropper)
 
     // ── Media3 (ExoPlayer) ─────────────────────────────────────
     implementation(libs.media3.exoplayer)
@@ -121,6 +130,9 @@ dependencies {
 
     // ── Test ───────────────────────────────────────────────────
     testImplementation(libs.junit)
+    testImplementation(libs.mockito.core)
+    testImplementation(libs.arch.core.testing)
+    testImplementation(libs.room.testing)
     androidTestImplementation(libs.junit.ext)
     androidTestImplementation(libs.espresso.core)
 }

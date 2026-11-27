@@ -18,16 +18,30 @@
 
         <item name="colorTertiary">@color/md_theme_tertiary</item>
         <item name="colorOnTertiary">@color/md_theme_on_tertiary</item>
+        <item name="colorTertiaryContainer">@color/md_theme_tertiary_container</item>
+        <item name="colorOnTertiaryContainer">@color/md_theme_on_tertiary_container</item>
 
         <item name="colorError">@color/md_theme_error</item>
         <item name="colorOnError">@color/md_theme_on_error</item>
+        <item name="colorErrorContainer">@color/md_theme_error_container</item>
+        <item name="colorOnErrorContainer">@color/md_theme_on_error_container</item>
 
+        <item name="android:colorBackground">@color/md_theme_background</item>
+        <item name="colorOnBackground">@color/md_theme_on_background</item>
         <item name="colorSurface">@color/md_theme_surface</item>
         <item name="colorOnSurface">@color/md_theme_on_surface</item>
         <item name="colorSurfaceVariant">@color/md_theme_surface_variant</item>
         <item name="colorOnSurfaceVariant">@color/md_theme_on_surface_variant</item>
+        <item name="colorSurfaceContainerLow">@color/md_theme_surface_container_low</item>
+        <item name="colorSurfaceContainer">@color/md_theme_surface_container</item>
+        <item name="colorSurfaceContainerHigh">@color/md_theme_surface_container_high</item>
 
         <item name="colorOutline">@color/md_theme_outline</item>
+        <item name="colorOutlineVariant">@color/md_theme_outline_variant</item>
+
+        <!-- ── Default component styles ─────────────────────────── -->
+        <item name="textInputStyle">@style/Widget.ProsumerChat.TextInputLayout</item>
+        <item name="toolbarStyle">@style/Widget.ProsumerChat.Toolbar</item>
 
         <!-- ── Status / Nav bar ──────────────────────────────────── -->
         <item name="android:statusBarColor">@android:color/transparent</item>
