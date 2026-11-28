@@ -8,8 +8,8 @@ import androidx.room.Index;
 import androidx.room.PrimaryKey;
 
 /**
- * UserEntity — Bảng lưu hồ sơ người dùng cục bộ trong Room DB (Single Source of Truth).
- * Bám sát SRS mục 4.3, schema Firestore /users/{uid} và yêu cầu Rubric (phoneNumber + privacy).
+ * UserEntity â€” Báº£ng lÆ°u há»“ sÆ¡ ngÆ°á»i dÃ¹ng cá»¥c bá»™ trong Room DB (Single Source of Truth).
+ * BÃ¡m sÃ¡t SRS má»¥c 4.3, schema Firestore /users/{uid} vÃ  yÃªu cáº§u Rubric (phoneNumber + privacy).
  */
 @Entity(
         tableName = "users",
@@ -26,15 +26,15 @@ public class UserEntity {
     @PrimaryKey
     @NonNull
     @ColumnInfo(name = "user_id")
-    private String userId = "";
+    public String userId = "";
 
     @NonNull
     @ColumnInfo(name = "username")
-    private String username = "";
+    public String username = "";
 
     @NonNull
     @ColumnInfo(name = "display_name")
-    private String displayName = "";
+    public String displayName = "";
 
     @Nullable
     @ColumnInfo(name = "nickname")
@@ -42,23 +42,23 @@ public class UserEntity {
 
     @Nullable
     @ColumnInfo(name = "avatar_url")
-    private String avatarUrl;
+    public String avatarUrl;
 
     @Nullable
     @ColumnInfo(name = "bio")
-    private String bio;
+    public String bio;
 
     @NonNull
     @ColumnInfo(name = "email")
-    private String email = "";
+    public String email = "";
 
     @Nullable
     @ColumnInfo(name = "phone_number")
-    private String phoneNumber;
+    public String phoneNumber;
 
     @Nullable
     @ColumnInfo(name = "birthday")
-    private String birthday;
+    public String birthday;
 
     @ColumnInfo(name = "is_online")
     private boolean isOnline;
@@ -67,7 +67,7 @@ public class UserEntity {
     private long lastSeen;
 
     @ColumnInfo(name = "email_verified")
-    private boolean emailVerified;
+    public boolean emailVerified;
 
     @NonNull
     @ColumnInfo(name = "avatar_visibility")
@@ -84,7 +84,7 @@ public class UserEntity {
     private boolean allowFindByPhone = true;
 
     @ColumnInfo(name = "updated_at")
-    private long updatedAt;
+    public long updatedAt;
 
     public UserEntity() {
         // Default constructor required by Room
@@ -237,3 +237,4 @@ public class UserEntity {
         this.updatedAt = updatedAt;
     }
 }
+

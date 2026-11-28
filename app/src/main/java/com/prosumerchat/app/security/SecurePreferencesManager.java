@@ -11,13 +11,13 @@ import java.security.GeneralSecurityException;
 import java.util.UUID;
 
 /**
- * SecurePreferencesManager — Lưu trữ an toàn cấu hình phiên đăng nhập,
- * định danh thiết bị, trạng thái khóa sinh trắc học và tùy chọn bảo mật.
+ * SecurePreferencesManager â€” LÆ°u trá»¯ an toÃ n cáº¥u hÃ¬nh phiÃªn Ä‘Äƒng nháº­p,
+ * Ä‘á»‹nh danh thiáº¿t bá»‹, tráº¡ng thÃ¡i khÃ³a sinh tráº¯c há»c vÃ  tÃ¹y chá»n báº£o máº­t.
  *
- * Không sử dụng EncryptedSharedPreferences (đã deprecated).
- * Mọi giá trị được mã hóa riêng lẻ bằng Tink AEAD (AES-256-GCM) thông qua
- * {@link TinkKeysetManager} với Associated Data (AAD) gắn theo tên khóa để
- * ngăn chặn tráo đổi ciphertext giữa các key và không bao giờ lưu plaintext.
+ * KhÃ´ng sá»­ dá»¥ng EncryptedSharedPreferences (Ä‘Ã£ deprecated).
+ * Má»i giÃ¡ trá»‹ Ä‘Æ°á»£c mÃ£ hÃ³a riÃªng láº» báº±ng Tink AEAD (AES-256-GCM) thÃ´ng qua
+ * {@link TinkKeysetManager} vá»›i Associated Data (AAD) gáº¯n theo tÃªn khÃ³a Ä‘á»ƒ
+ * ngÄƒn cháº·n trÃ¡o Ä‘á»•i ciphertext giá»¯a cÃ¡c key vÃ  khÃ´ng bao giá» lÆ°u plaintext.
  */
 public final class SecurePreferencesManager {
 
@@ -59,7 +59,7 @@ public final class SecurePreferencesManager {
         return sInstance;
     }
 
-    // ── Session & Device ──────────────────────────────────────────────────────
+    // â”€â”€ Session & Device â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
     @Nullable
     public String getCurrentSessionId() {
@@ -79,7 +79,7 @@ public final class SecurePreferencesManager {
     }
 
     /**
-     * Lấy Device ID ổn định trên thiết bị; sinh UUID mới ở lần đầu và lưu mã hóa.
+     * Láº¥y Device ID á»•n Ä‘á»‹nh trÃªn thiáº¿t bá»‹; sinh UUID má»›i á»Ÿ láº§n Ä‘áº§u vÃ  lÆ°u mÃ£ hÃ³a.
      */
     @NonNull
     public synchronized String getOrCreateDeviceId() {
@@ -105,7 +105,7 @@ public final class SecurePreferencesManager {
         }
     }
 
-    // ── Biometric Lock ────────────────────────────────────────────────────────
+    // â”€â”€ Biometric Lock â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
     public boolean isBiometricEnabled() {
         return getEncryptedBoolean(KEY_BIOMETRIC_ENABLED, false);
@@ -116,7 +116,7 @@ public final class SecurePreferencesManager {
     }
 
     /**
-     * Thời gian chờ khóa sinh trắc học (giây): 0 (ngay lập tức), 60 (1 phút), 300 (5 phút).
+     * Thá»i gian chá» khÃ³a sinh tráº¯c há»c (giÃ¢y): 0 (ngay láº­p tá»©c), 60 (1 phÃºt), 300 (5 phÃºt).
      */
     public int getBiometricTimeoutSeconds() {
         return getEncryptedInt(KEY_BIOMETRIC_TIMEOUT_SECONDS, DEFAULT_BIOMETRIC_TIMEOUT_SECONDS);
@@ -135,7 +135,7 @@ public final class SecurePreferencesManager {
         putEncryptedLong(KEY_LAST_BACKGROUND_TIMESTAMP, Math.max(0L, timestampMs));
     }
 
-    // ── Privacy / Logout / Language ───────────────────────────────────────────
+    // â”€â”€ Privacy / Logout / Language â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
     public boolean isClearDataOnLogout() {
         return getEncryptedBoolean(KEY_CLEAR_DATA_ON_LOGOUT, false);
@@ -156,7 +156,7 @@ public final class SecurePreferencesManager {
     }
 
     /**
-     * Xóa thông tin phiên hiện tại khi đăng xuất nhưng vẫn giữ lại deviceId và ngôn ngữ.
+     * XÃ³a thÃ´ng tin phiÃªn hiá»‡n táº¡i khi Ä‘Äƒng xuáº¥t nhÆ°ng váº«n giá»¯ láº¡i deviceId vÃ  ngÃ´n ngá»¯.
      */
     public void clearSessionState() {
         prefs.edit()
@@ -166,7 +166,7 @@ public final class SecurePreferencesManager {
                 .apply();
     }
 
-    // ── Internal Tink AEAD helpers ────────────────────────────────────────────
+    // â”€â”€ Internal Tink AEAD helpers â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
     private void putEncryptedString(@NonNull String key, @NonNull String value) {
         try {
@@ -247,5 +247,23 @@ public final class SecurePreferencesManager {
 
     private void removeKey(@NonNull String key) {
         prefs.edit().remove(key).apply();
+    }
+
+    public String getDeviceId() {
+        String id = getEncryptedString("device_id", null);
+        if (id == null || id.trim().isEmpty()) {
+            id = java.util.UUID.randomUUID().toString();
+            putEncryptedString("device_id", id);
+        }
+        return id;
+    }
+
+    public boolean getClearDataOnLogout() {
+        return getEncryptedBoolean("clear_data_on_logout", true);
+    }
+
+    public void clearSession() {
+        removeKey("current_session_id");
+        removeKey("current_user_id");
     }
 }

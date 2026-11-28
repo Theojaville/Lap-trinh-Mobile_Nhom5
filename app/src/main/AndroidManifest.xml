@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <!--
     AndroidManifest.xml — ProsumerChat
     !!! File này dễ conflict — ai thêm Activity/Service/Permission phải báo nhóm trước !!!
@@ -63,6 +63,16 @@
             android:windowSoftInputMode="adjustResize" />
         <activity
             android:name=".ui.auth.RegisterActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+
+        <!-- Stage 3: Auth Activities (Dev A Giai doan 3.3) -->
+        <activity
+            android:name=".ui.auth.VerifyEmailActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".ui.auth.ForgotPasswordActivity"
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />
 

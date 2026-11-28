@@ -1,30 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--
-    values-vi/strings.xml — Tiếng Việt.
-    Luôn đồng bộ key với values/strings.xml và values-en/strings.xml.
--->
+<!-- values-vi/strings.xml — Tiếng Việt (đồng bộ đầy đủ với Giai đoạn 3) -->
 <resources>
     <string name="app_name">ProsumerChat</string>
-
-    <!-- ── Common / Navigation ─────────────────────────────────── -->
     <string name="action_save">Lưu</string>
     <string name="action_cancel">Hủy</string>
     <string name="action_confirm">Xác nhận</string>
     <string name="action_retry">Thử lại</string>
     <string name="action_back">Quay lại</string>
     <string name="action_logout">Đăng xuất</string>
+    <string name="action_verify_now">Xác minh ngay</string>
     <string name="status_loading">Đang tải…</string>
     <string name="error_generic">Đã có lỗi xảy ra. Vui lòng thử lại.</string>
     <string name="error_network">Không có kết nối mạng. Vui lòng kiểm tra lại.</string>
-
-    <!-- ── Main Tabs (Dev C / Dev B / Dev A) ───────────────────── -->
+    <string name="error_field_required">Trường này không được để trống.</string>
     <string name="label_chats">Tin nhắn</string>
     <string name="label_friends">Bạn bè</string>
     <string name="label_profile">Hồ sơ</string>
     <string name="label_settings">Cài đặt</string>
     <string name="label_saved_messages">Kho lưu trữ cá nhân</string>
-
-    <!-- ── Auth — Dev A ────────────────────────────────────────── -->
     <string name="label_login">Đăng nhập</string>
     <string name="label_register">Đăng ký</string>
     <string name="label_forgot_password">Quên mật khẩu</string>
@@ -37,10 +30,37 @@
     <string name="hint_phone_number">Số điện thoại (tùy chọn)</string>
     <string name="hint_password">Mật khẩu</string>
     <string name="hint_confirm_password">Xác nhận mật khẩu</string>
+    <string name="prompt_no_account">Chưa có tài khoản?</string>
+    <string name="prompt_has_account">Đã có tài khoản?</string>
+    <string name="prompt_create_account">Tạo tài khoản ProsumerChat</string>
+    <string name="helper_username_format">4–30 ký tự: chữ thường, số, dấu gạch dưới (_)</string>
+    <string name="helper_password_format">Tối thiểu 8 ký tự, có chữ hoa, chữ thường, số và ký tự đặc biệt</string>
+    <string name="helper_phone_format">Ví dụ: 0901234567 hoặc +84901234567</string>
     <string name="error_invalid_credentials">Email/tên đăng nhập hoặc mật khẩu không đúng.</string>
+    <string name="error_invalid_email">Địa chỉ email không hợp lệ.</string>
+    <string name="error_invalid_username">Tên đăng nhập phải 4–30 ký tự, chỉ dùng chữ thường, số và dấu _.</string>
+    <string name="error_invalid_display_name">Tên hiển thị phải từ 2–50 ký tự.</string>
+    <string name="error_invalid_password">Mật khẩu phải ít nhất 8 ký tự, có chữ hoa, chữ thường, số và ký tự đặc biệt.</string>
+    <string name="error_invalid_phone">Số điện thoại không hợp lệ. Ví dụ: 0901234567</string>
+    <string name="error_password_mismatch">Mật khẩu xác nhận không khớp.</string>
+    <string name="error_username_taken">Tên đăng nhập này đã được sử dụng. Vui lòng chọn tên khác.</string>
+    <string name="error_email_already_in_use">Email này đã được đăng ký. Vui lòng đăng nhập hoặc dùng email khác.</string>
+    <string name="error_register_failed">Đăng ký thất bại. Vui lòng thử lại.</string>
+    <string name="error_change_password_failed">Đổi mật khẩu thất bại. Vui lòng thử lại.</string>
+    <string name="error_too_many_requests">Quá nhiều lần thử. Vui lòng đợi một lúc rồi thử lại.</string>
     <string name="error_session_revoked">Phiên đăng nhập đã bị đăng xuất từ thiết bị khác.</string>
-
-    <!-- ── Language & Settings — Dev A ─────────────────────────── -->
+    <string name="desc_verify_email_sent">Chúng tôi đã gửi email xác minh đến địa chỉ email của bạn. Vui lòng kiểm tra hộp thư và nhấn liên kết xác minh.</string>
+    <string name="action_check_verified">Tôi đã xác minh</string>
+    <string name="action_resend_email">Gửi lại email xác minh</string>
+    <string name="action_continue_limited_mode">Tiếp tục vào ứng dụng (chế độ hạn chế)</string>
+    <string name="status_email_not_yet_verified">Email chưa được xác minh. Vui lòng kiểm tra hộp thư của bạn.</string>
+    <string name="status_verification_email_resent">Email xác minh đã được gửi lại.</string>
+    <string name="countdown_resend_format">Gửi lại sau %ds</string>
+    <string name="desc_forgot_password">Nhập địa chỉ email của bạn. Chúng tôi sẽ gửi link để đặt lại mật khẩu.</string>
+    <string name="action_send_reset_link">Gửi link đặt lại mật khẩu</string>
+    <string name="action_back_to_login">Quay lại đăng nhập</string>
+    <string name="desc_reset_email_sent">Nếu địa chỉ email tồn tại trong hệ thống, bạn sẽ nhận được email đặt lại mật khẩu trong vài phút.</string>
+    <string name="warning_email_not_verified">Email chưa xác minh. Một số tính năng bị hạn chế.</string>
     <string name="settings_language">Ngôn ngữ</string>
     <string name="language_vietnamese">Tiếng Việt</string>
     <string name="language_english">English</string>
@@ -49,8 +69,6 @@
     <string name="settings_active_devices">Thiết bị đang hoạt động</string>
     <string name="settings_biometric_lock">Khóa sinh trắc học</string>
     <string name="settings_clear_data_on_logout">Xóa dữ liệu cục bộ khi đăng xuất</string>
-
-    <!-- ── Notifications — Dev A ───────────────────────────────── -->
     <string name="notif_channel_messages_name">Tin nhắn mới</string>
     <string name="notif_channel_messages_desc">Thông báo khi có tin nhắn đến</string>
     <string name="notif_secure_new_message">Tin nhắn mới</string>
